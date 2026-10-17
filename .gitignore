@@ -1,0 +1,13 @@
+# Bağımlılıklar (npm install ile yeniden oluşturulur)
+node_modules/
+
+# Gizli bilgiler: veritabanı şifresi vb. ASLA GitHub'a gitmemeli
+.env
+
+# Derleme çıktıları ve loglar
+dist/
+*.log
+
+# İşletim sistemi / editör dosyaları
+.DS_Store
+Thumbs.db
