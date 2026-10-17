@@ -1,6 +1,7 @@
 import 'dotenv/config';
 import express from 'express';
 import cors from 'cors';
+import { query } from './db.js';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -18,6 +19,17 @@ app.use((req, res, next) => {
 // İlk API uç noktamız: sunucu ayakta mı?
 app.get('/api/health', (req, res) => {
   res.json({ status: 'ok', app: 'SupplyChain Guardian', time: new Date().toISOString() });
+});
+
+// Veritabanı bağlantı testi: Supabase'e basit bir sorgu gönderir.
+app.get('/api/db-health', async (req, res) => {
+  try {
+    const result = await query('SELECT now() AS db_time, version() AS db_version');
+    res.json({ status: 'ok', ...result.rows[0] });
+  } catch (err) {
+    console.error('Veritabanı hatası:', err.message);
+    res.status(500).json({ status: 'error', error: err.message });
+  }
 });
 
 // Hiçbir route eşleşmezse 404 döner.

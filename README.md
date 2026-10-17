@@ -83,6 +83,7 @@ Tarayıcıda http://localhost:5180 adresini açın. "✅ Backend bağlantısı: 
 | Yöntem | Yol | Açıklama |
 |---|---|---|
 | GET | `/api/health` | Sunucunun ayakta olduğunu ve sunucu saatini döndürür |
+| GET | `/api/db-health` | Veritabanına bağlanıp saatini ve PostgreSQL sürümünü döndürür |
 
 Eşleşmeyen tüm istekler `404 {"error":"Bulunamadı"}` döner. Her istek, kendi yazdığımız loglama middleware'i ile backend terminaline yazılır.
 
