@@ -64,7 +64,7 @@ npm install
 npm run dev
 ```
 
-http://localhost:5173 adresini açın. Yeşil "✅ Backend bağlantısı: ok" yazısı görmelisiniz.
+http://localhost:5180 adresini açın. Yeşil "✅ Backend bağlantısı: ok" yazısı görmelisiniz.
 
 **Burada ne oldu?** Tarayıcıdaki React uygulaması (frontend) `/api/health` adresine istek attı, Vite bu isteği 3000 portundaki Express'e (backend) iletti, Express JSON cevap döndü. Backend terminalini kapatıp sayfayı yenilerseniz kırmızı hata mesajını görürsünüz; deneyin.
 
@@ -114,7 +114,7 @@ Bağlantı adresini şimdilik almanız gerekmiyor; 2. adımda birlikte `.env` do
 ## 1. Adım tamamlandı mı?
 
 - [ ] `node -v`, `npm -v`, `git --version` çalışıyor
-- [ ] http://localhost:5173 yeşil mesajı gösteriyor
+- [ ] http://localhost:5180 yeşil mesajı gösteriyor
 - [ ] Kod GitHub'da görünüyor
 - [ ] Supabase projesi oluşturuldu
 

@@ -12,7 +12,7 @@ Başarı ölçütleri: (1) ürünün geçtiği aşamalar görüntülenebiliyor, 
 - Ortam: Windows, PowerShell, VS Code. Kullanıcı yolunda boşluk var (`C:\Users\mehmet çapan\...`), yolları tırnak içinde yaz.
 
 ## Teknoloji
-- Frontend: React + Vite (`frontend/`, port 5173, `/api` istekleri backend'e proxy'lenir)
+- Frontend: React + Vite (`frontend/`, port 5180, `/api` istekleri backend'e proxy'lenir)
 - Backend: Node.js + Express, ES modules (`backend/`, port 3000)
 - Veritabanı: PostgreSQL, Supabase üzerinde. Supabase sadece veritabanı olarak kullanılır; hazır API/Auth özellikleri kullanılmaz (backend ve middleware elle yazılacak).
 - Gizli bilgiler (`DATABASE_URL` vb.) sadece `backend/.env` içinde; `.env` asla commit edilmez.

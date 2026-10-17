@@ -28,7 +28,7 @@ guardianchain/
 ├── backend/              # Express API (port 3000)
 │   ├── .env.example      # Ortam değişkenleri şablonu
 │   └── src/index.js      # Sunucu, middleware ve route'lar
-├── frontend/             # React arayüzü (port 5173)
+├── frontend/             # React arayüzü (port 5180)
 │   ├── vite.config.js    # /api isteklerini backend'e yönlendiren proxy
 │   └── src/App.jsx       # Ana sayfa
 └── KURULUM.md            # Ayrıntılı kurulum rehberi
@@ -57,7 +57,7 @@ npm install
 npm run dev
 ```
 
-Tarayıcıda http://localhost:5173 adresini açın. "✅ Backend bağlantısı: ok" yazısını görmelisiniz. Kırmızı hata görürseniz backend'in çalıştığından emin olun.
+Tarayıcıda http://localhost:5180 adresini açın. "✅ Backend bağlantısı: ok" yazısını görmelisiniz. Kırmızı hata görürseniz backend'in çalıştığından emin olun.
 
 ## Ortam değişkenleri
 
