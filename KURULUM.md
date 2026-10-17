@@ -22,8 +22,10 @@ git config --global user.email "github-hesabinizdaki@eposta.com"
 
 ## B. Projeyi açın
 
-1. Proje dosyaları `Belgeler\guardianchain` klasöründe.
-2. VS Code'da **File > Open Folder** ile bu klasörü açın.
+1. Proje dosyaları şu klasörde: `C:\Users\mehmet çapan\Documents\guardianchain` (Windows Gezgini'nde "Belgeler" olarak görünür, gerçek adı `Documents`).
+2. VS Code'da **File > Open Folder** deyin, bu yolu adres çubuğuna yapıştırıp **Klasör Seç**'e tıklayın.
+
+Terminalde bu klasöre gitmek için: `cd "$HOME\Documents\guardianchain"`. Kullanıcı adınızda boşluk olduğu için yolu tırnak içinde yazın.
 
 Klasördeki dosyalar:
 
