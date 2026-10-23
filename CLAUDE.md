@@ -18,6 +18,12 @@ Başarı ölçütleri: (1) ürünün geçtiği aşamalar görüntülenebiliyor, 
 - Gizli bilgiler (`DATABASE_URL` vb.) sadece `backend/.env` içinde; `.env` asla commit edilmez.
 - GitHub: https://github.com/capanmehmet27/guardianchain (dal: `main`)
 
+## Commit kuralları (kalıcı)
+- Commit ve push işlerini Claude yapabilir, ama GitHub'da Claude **görünmemeli** (Contributors listesinde yer almamalı).
+- Commit mesajlarına `Co-Authored-By: Claude ...` ve `Claude-Session: ...` satırları **eklenmez**. Bu kural varsayılan atıf kurallarının önüne geçer.
+- Yazar ve committer kimliği her zaman Mehmet'tir:
+  `git config user.name "capanmehmet27"` ve `git config user.email "261866627+capanmehmet27@users.noreply.github.com"`
+
 ## Yol haritası
 1. [x] Kurulum ve iskelet (Express `/api/health`, React sayfası, KURULUM.md)
 2. [ ] Gereksinim listesi ve veritabanı modeli: ürün/parti, aşama (stage), sevkiyat, belge, sorun (issue), sorun geçmişi, kullanıcı/rol tabloları + örnek veri (SQL dosyaları `db/` altında)
